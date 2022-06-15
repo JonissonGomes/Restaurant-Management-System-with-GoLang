@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/Restaurant-Management-System-with-GoLang/controllers"
+	"github.com/JonissonGomes/Restaurant-Management-System-with-GoLang/package/controllers"
 	"github.com/gorilla/mux"
 )
 
