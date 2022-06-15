@@ -31,4 +31,7 @@ func GetRestaurantById(w http.ResponseWriter, r *http.Request) {
 	restaurantDetails, _ := entities.GetRestaurantById(int64(ID))
 
 	res, _ := json.Marshal(restaurantDetails)
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(http.StatusOK)
+	w.Write(res)
 }
